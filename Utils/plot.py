@@ -2,8 +2,6 @@ import matplotlib
 import matplotlib.pyplot as plt
 from snntorch import spikeplot as splt
 
-matplotlib.use("Agg")
-
 
 def Plotcurrentspike(
     cur, mem, spk, thr_line=False, vline=False, title=False, y_lim=1.25, y_lim2=1.25
