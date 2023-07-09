@@ -35,14 +35,14 @@ Izhikevich is a 2D spiking neural model that offers a good trade-off between bio
 
 ##### Integrate and Fire Model
 Integrate-and-fire, one of the simple models, integrates input spikes to membrane potential, if it reaches the defined threshold, an output spike is generated, and membrane potential changes to a resting state. This model can be determined by
-$Cm dv/dt=I(t),ν←vrest$ when  $ν≥νth,$
+$$Cm dv/dt=I(t),ν←vrest$$ $$when$$  $$ν≥νth,$$
 This model is the lowest one in terms of computational power consumption. The leaky integrate-and-fire model, an important type of IF neuron model, adds a leak to the membrane potential. This model is defined by the following equation,
-$τleakdvdt=[υ(t)−υrest]+rmI(t),υ←υrest$ when $υ≥υth,$
+$$τleakdvdt=[υ(t)−υrest]+rmI(t),υ←υrest$$ $$when$$ $$υ≥υth,$$
 The LIF model is one of the widely used spiking neuron models because of its very low computational cost, its accuracy in terms of replicating the spiking behavior of biological neurons and its speed in simulating.
 *There are also more complex types of IF model such as exponential integrate-and-fire, quadratic integrate-and-fire, and adaptive exponential integrate-and-fire.*
 
 ##### Spike Response Model
 The spike response model is a bio-inspired spiking neuron that describes more precisely the effect of input spikes on the membrane potential. Similar to the LIF model, and SRM neuron generates spikes whenever its internal membrane potential reaches the threshold. However, in contrast to LIF, it includes a function dependent on reset and refractory periods.
 Moreover, unlike the LIF model that uses differential equations for the voltage potential, the SRM is formulated using response kernels. The SRM model mathematical formulation is expressed as,
-$υ(t)=η(t−tˆ)+\int_∞^∞ κ(t−tˆ,s)I(t−s)ds,$
+$$υ(t)=η(t−tˆ)+\int_∞^∞ κ(t−tˆ,s)I(t−s)ds,$$
 The 1D spike response model is simpler than other models on the level of the spike generation mechanism. It offers low computational cost. However it provides poor biological plausibility compared with the Hodgkin and Huxley model.
