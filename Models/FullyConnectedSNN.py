@@ -1,3 +1,4 @@
+import snntorch as snn
 from snntorch import surrogate
 import torch.nn as nn
 import numpy as np
@@ -10,13 +11,13 @@ class Net(nn.Module):
         self.num_hidden = num_hidden 
         self.num_outputs = num_outputs 
         self.num_steps = num_steps
-        self.beta = self.beta
+        self.beta = beta
         super().__init__()
 
         self.fc1 = nn.Linear(self.num_inputs, self.num_hidden)
-        self.lif1 = nn.Leaky(beta = self.beta)
+        self.lif1 = snn.Leaky(beta = self.beta)
         self.fc2 = nn.Linear(self.num_hidden,self.num_outputs)
-        self.lif2 = nn.Leaky(beta=self.beta)
+        self.lif2 = snn.Leaky(beta=self.beta)
     
     def forward(self,x):
         mem1 = self.lif1.init_leaky()
