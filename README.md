@@ -1,6 +1,7 @@
 # Neuromorphic-computing
 
 `This repo contains implementation of spiking neural network algorithms and neuromorphic computing notes.`
+*Each folder/sub folder contains a **README.md** file, explaining each algorithms implemented.*
 
 ### Neuromorphic computers
 Neuromorphic computers have the following characteristics.
