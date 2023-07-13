@@ -215,7 +215,7 @@ class Stdp:
                         int(self.time / self.dt), 1, 1, 28, 28
                     )
                 }
-                if self._gpu_init.gpu:
+                if self.gpu:
                     inputs = {k: v.cuda() for k, v in inputs.item()}
                 if step % self.update_interval == 0 and step > 0:
                     label_tensor = torch.tensor(labels, device=device)
