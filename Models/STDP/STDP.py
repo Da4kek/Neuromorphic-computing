@@ -112,7 +112,7 @@ class Stdp:
     def _train_init(self):
         if not self.train:
             self.update_interval = self.n_test
-            return self.update_interval
+        return self.update_interval
 
     def _intensity_init(self):
         start_intensity = self.intensity
@@ -247,7 +247,7 @@ class Stdp:
                 exc_voltages = exc_voltage_monitor.get("v")
                 inh_voltages = inh_voltage_monitor.get("v")
 
-                spike_record[step % self.update_interval] = (
+                spike_record[step % self._train_init()] = (
                     spikes["Ae"].get("s").squeeze()
                 )
                 if self.plot:
