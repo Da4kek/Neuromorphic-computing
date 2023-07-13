@@ -146,7 +146,7 @@ class Stdp:
             ),
         )
         spike_record = torch.zeros(
-            (self.update_interval, int(self.time / self.dt), self.n_neurons),
+            (self._train_init(), int(self.time / self.dt), self.n_neurons),
             device=device,
         )
         n_classes = 10
@@ -250,6 +250,7 @@ class Stdp:
                 spike_record[step % self._train_init()] = (
                     spikes["Ae"].get("s").squeeze()
                 )
+
                 if self.plot:
                     image = batch["image"].view(28, 28)
                     inpt = inputs["X"].view(self.time, 784).sum(0).view(28, 28)
