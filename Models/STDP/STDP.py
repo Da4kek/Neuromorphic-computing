@@ -324,7 +324,7 @@ class Stdp:
             proportion_pred = proportion_weighting(
                 spikes=spike_record,
                 assignments=assignments,
-                porportions=proportions,
+                proportions=proportions,
                 n_labels=n_classes,
             )
             accuracy["all"] += float(
