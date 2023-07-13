@@ -4,7 +4,7 @@ from torch.utils.data import DataLoader
 import numpy as np 
 import itertools 
 from Utils.MeasureAcc import measure_accuracy
-from Models.FullyConnectedSNN import Net
+from Models.SNN_leaky import FullyConnectedSNN as SNN
 from torchvision import datasets,transforms
 
 batch_size = 128 
@@ -34,7 +34,7 @@ num_outputs = 10
 num_steps = 25 
 beta = 0.95
 
-net = Net(num_inputs,num_hidden,num_outputs,num_steps,beta).to(device)
+net = SNN.Net(num_inputs,num_hidden,num_outputs,num_steps,beta).to(device)
 
 
 loss = nn.CrossEntropyLoss()
