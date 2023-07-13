@@ -119,6 +119,7 @@ class Stdp:
         return start_intensity
 
     def Network(self):
+        n_sqrt = int(np.ceil(np.sqrt(self.n_neurons)))
         network = DiehlAndCook2015(
             n_inpt=784,
             n_neurons=self.n_neurons,
@@ -170,7 +171,7 @@ class Stdp:
                 time=int(self.time / self.dt),
                 device=device,
             )
-        network.add_monitor(spikes[layer], name="%s_spikes" % layer)
+            network.add_monitor(spikes[layer], name="%s_spikes" % layer)
 
         voltages = {}
         for layer in set(network.layers) - {"X"}:
@@ -180,9 +181,9 @@ class Stdp:
                 time=int(self.time / self.dt),
                 device=device,
             )
-        network.add_monitor(voltages[layer], name="%s_voltages" % layer)
+            network.add_monitor(voltages[layer], name="%s_voltages" % layer)
 
-        input_ims, input_axes = None, None
+        inpt_ims, inpt_axes = None, None
         spike_ims, spike_axes = None, None
         weigths_im = None
         assigns_im = None
@@ -257,12 +258,10 @@ class Stdp:
                     input_exc_weights = network.connections[("X", "Ae")].w
                     square_weights = get_square_weights(
                         input_exc_weights.view(784, self.n_neurons),
-                        int(np.ceil(np.sqrt(self.n_neurons))),
+                        n_sqrt,
                         28,
                     )
-                    square_assignments = get_square_assignments(
-                        assignments, np.ceil(np.sqrt(self.n_neurons))
-                    )
+                    square_assignments = get_square_assignments(assignments, n_sqrt)
                     spikes_ = {layer: spikes[layer].get("s") for layer in spikes}
                     voltages = {"Ae": exc_voltages, "Ai": inh_voltages}
                     inpt_axes, inpt_ims = plot_input(
