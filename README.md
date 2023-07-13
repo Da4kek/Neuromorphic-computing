@@ -47,3 +47,14 @@ The spike response model is a bio-inspired spiking neuron that describes more pr
 Moreover, unlike the LIF model that uses differential equations for the voltage potential, the SRM is formulated using response kernels. The SRM model mathematical formulation is expressed as,
 $$υ(t)=η(t−tˆ)+\int_∞^∞ κ(t−tˆ,s)I(t−s)ds,$$
 The 1D spike response model is simpler than other models on the level of the spike generation mechanism. It offers low computational cost. However it provides poor biological plausibility compared with the Hodgkin and Huxley model.
+
+### Creating and Adding Learning Rules
+
+#### What is considered a learning rule?
+Learning rules are necessary for the automated adaption of network parameters during simulation.
+I will be using two different categories of learning rules:
+* **Two factor: Associative learning takes place based on pre- and post-synaptic neural activity**
+  * hebbian learning, which may be summarized as "cells that fire together wire together". That is, co-active neurons causes their connection strength to increase.
+  * Spike-timing-dependent plasticity(STDP) stipulates that the ordering of pre- and post-synaptic spike matters.A synapse is strengthened if the pre-synaptic neurons fires before the post-synaptic neuron and weakened when post-synaptic neurons fires before the pre-synaptic neuron.
+* **thre factor: In addition to associating pre- and post-synaptic neural activity, a third factor is introduced which modulates plasticity on a more global level**
+  * Reward, error, attention- modulated (Hebian learning, STDP): The same learning rules described above are modulated by the presence of global signals such as reward, error or attention, which can be variously defined in machine learning or reinforcement learning contexts. These signals act to gate plasticity, turning it on or off and switching its sign and magnitude, based on the task at hand.
