@@ -31,3 +31,19 @@ When an action potential fires, many vesiclesfuse with the cell membrane and rel
 
 To be able to measure miniature excitatory postsynaptic potentials, it is necessary to prevent the occurrence of action potentials, which can be done using a technique called voltage-clamp recording. In a two-electrode voltage clamp, one electrode measures the cell membrane potential, and one injects current, positive or negative electrical charges into the cell.   
 This technique allows the cell's internal voltage to be held constant as well as measure the amount of current needed to hold the voltage constant. 
+
+**Membrane Potential:**
+
+The ability of a neuron to vary its intrinsic electric potential, the membrane potential, is importanat for the signalling capabilities of a neuron. The membrane potential which shall be denoted as $Vm$, is defined as the difference between the electric potential within a cell and its surroundings. The inside of a cell is neutral when positively charged ions are called cations are bound to negatively charged ions called anions.     
+The neuronal membrane is, however not permeable to the anions that typically bind to potassium, so the diffusion process leaves an excess of negative charge inside a neuron and an excess of positive charge in the surrounding fluid of the neuron.
+
+**Ion channels:**
+
+The permeability of cell membranes to certain ions is achieved via ion channels, Ion channels are special types of proteins embedded in the membranes of cells. Common ions involved in such processes within the nervous system are sodium (Na+), potassium (K+), calcium (Ca2+) and chloride(Cl-). The ion channels that drive the resting potential of neurons are usually open all the time. It is hence appropriate to call them *Leakage channels*.   
+Types of ion channels:
+* Leakage channel
+* Voltage-gated ion channel
+* Ion pump
+* Ionotropic
+* Metabotropic
+
