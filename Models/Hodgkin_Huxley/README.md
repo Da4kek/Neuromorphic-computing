@@ -19,6 +19,7 @@ Hodgkin and Huxley's model relies on the opening and closing of channels, select
 3. hodgkin and Katz explained the overshooting action potential by showing that it results from an increase in socium permeability.
 4. Finally, hodgkin, Huxley and Katz developed a voltage-clamp circuit to enable quantitative measurement of ionic currents from squid axon.
 ![](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2F81426/MediaObjects/41593_2000_Article_BFnn1100_1165_Fig1_HTML.gif?as=webp)
+
 `(a) The first intracellular recording of an action potential, from squid axon. Time calibration, 2 ms.(b) Separation of ionic conductances underlying the action potential (AP) in the H-H model.`
 
 HH then showed that step depolarizations of the squid axon trigger an inward current folloowed by an outward current.
