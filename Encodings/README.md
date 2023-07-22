@@ -32,23 +32,3 @@ The idea of rate coding is actually quite controversial. Although we are fairly 
 2. Reaction response times
 
 Rate coding is almost certainly working in conjunction with other encoding schemes in the brain. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
