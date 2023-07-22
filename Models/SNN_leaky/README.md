@@ -43,11 +43,12 @@ Computational neuroscience has provided a new idea for unsupervised learning mec
 **LIF neuron's dynamic properties:**
 1. The lapicque model is considered the earliest form of the LIF model and it becomes the LIF model after adding an attenuation term. The LIF model is one the most popularly used models for analyzing the nervous system's behavior. Unlike the neuron models used for computing, some neuron models have also been created and applied to simulate nreal neuron propagation potentials. The HH model was proposed by analyzing the electric current flow through the surface membrane. We call it a simulation-oriented neuron model. The Izhikevich model is a simplifications of the HH model based on the theory of dynamic systems.
 2. The LIF model can be modeled as a circuit composed of resistor and a capacitor in parallel, which respectively respresent the leakage and capacitance of the membrane. The integrate and fire neuron model is described by the dynamics of the neuron's membrane potential (MP), V(t),
-$$Cm dV (t)/dt + (V (t) − V0 )/Rm = Iinj ,$$
+$$Cm dV (t)/dt + (V (t) − V0 )/Rm = Iinj ,$$ 
 
 **Linear Leaky-integrate-and-fire model:**
 Once the membrane potential reaches the spiking threshold, an action potential will be exceeded. Then the membrane potential will be reset: "Reset-to-Zero" used.
-$$V (t) = {
+```V (t) = {
 H(t) · (1 − S(t))
-H(t) · (1 − S(t)) + (H(t) − Vreset) · S(t) }$$
+H(t) · (1 − S(t)) + (H(t) − Vreset) · S(t) }
+```
 The LIF neuron model with "Linear reset" is named Linear LIF model.
