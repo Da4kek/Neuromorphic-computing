@@ -24,7 +24,9 @@ A spiking neuron has a similar structure to that of an ANN neuron but shows diff
 ##### Hodgkin-Huxley Model
 
 The HH model is the first biological model of a spiking neuron that describes how action potentials in the neuron are initiated and propagated. It shows the mathematical description of electric current through the membrane potential, which can be calculated as
-$$I=Cdvdt+GNam3h(V−VNa)+Gkn4(V−Vk)+GL(V−VL)$$,
+
+$I=Cdvdt+GNam3h(V−VNa)+Gkn4(V−Vk)+GL(V−VL)$,
+
 The HH model,the most biologically plausible spiking neuron model, accurately capture the dynamics of many real neurons. However, it is too computationally expensive due to the feedback loop initiated and the differential equations to be calculated continuously.
 
 ##### Izhikevich Model
@@ -36,9 +38,13 @@ Izhikevich is a 2D spiking neural model that offers a good trade-off between bio
 
 ##### Integrate and Fire Model
 Integrate-and-fire, one of the simple models, integrates input spikes to membrane potential, if it reaches the defined threshold, an output spike is generated, and membrane potential changes to a resting state. This model can be determined by
-$$Cm dv/dt=I(t),ν←vrest$$ $$when$$  $$ν≥νth,$$
+
+$Cm dv/dt=I(t),ν←vrest$ $when$$ $ν≥νth,$
+
 This model is the lowest one in terms of computational power consumption. The leaky integrate-and-fire model, an important type of IF neuron model, adds a leak to the membrane potential. This model is defined by the following equation,
-$$τleakdvdt=[υ(t)−υrest]+rmI(t),υ←υrest$$ $$when$$ $$υ≥υth,$$
+
+$τleakdvdt=[υ(t)−υrest]+rmI(t),υ←υrest$ $when$ $υ≥υth,$
+
 The LIF model is one of the widely used spiking neuron models because of its very low computational cost, its accuracy in terms of replicating the spiking behavior of biological neurons and its speed in simulating.
 *There are also more complex types of IF model such as exponential integrate-and-fire, quadratic integrate-and-fire, and adaptive exponential integrate-and-fire.*
 
