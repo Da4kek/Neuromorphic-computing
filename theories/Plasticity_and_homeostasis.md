@@ -32,4 +32,4 @@ Synaptic plasticity can also include the formation of new synapses or the loss o
 
 ### Homeostatic synaptic plasticity:
 
-Homeostatic synaptic plasticity, or simply homeostatic plasticity, is a specific type of plasticity in which there is a change in the synaptic signal that produces an opposite change in network or circuit function to the direction of treatment in an attempt to maintain homeostasis. Homeostatic plasticity regulates neuronal activity and neutralizes destablizing forces.
+Homeostatic synaptic plasticity, or simply homeostatic plasticity, is a specific type of plasticity in which there is a change in the synaptic signal that produces an opposite change in network or circuit function to the direction of treatment in an attempt to maintain homeostasis. Homeostatic plasticity regulates neuronal activity and neutralizes destablizing forces.      
