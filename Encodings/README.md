@@ -1,7 +1,15 @@
 ## Introduction to Spike Encoding:
 
+Neural encoding refers to the map from stimulus to response. The main focus is to understand how neurons respond to a wide variety of stimuli, and to construct models that attempt to predict responses to other stimuli. Neural decoding refers to the reverse map, from response to stimulus, and the challenge is to reconstruct a stimulus, or certain aspects of that stimulus from the spike sequences it evokes.
+
+During rate coding, precisely calculating firing rate is very important. In fact, the term "firing rate" has a few different definitions, which refer to different averaging procedures, such as an average over time or an average over several repitions of experiment.   
+The learning in rate coding is based on activity-dependent synaptic weight modifications.
+
+> Activity-dependent synaptic plasticity is fundamental for learning and memory in neuronal systems involving information processing and storage. Two opposite activity-dependent plasticity modifications have been biologically identified: **Long term potential** and **long term depression**
+
 The brain trades in the global currency of the spike.   
 the goal is to build a spiking neural network, it makes sense to use spikes at the input too. Although it is quite common to use non-spiking inputs, while encoding things to remember: Spikes, Sparsity and Static suppression.
+
 
 Encoding algorithms for spike generation can be classified according to two main categories:
 * Rate coding
@@ -41,6 +49,8 @@ The algorithm can be performed through the following steps:
    where
    $$ISIi=−log(1−xi)/r$$
 4. Generation of a spike at each time $ti$ until $ti > del t$
+
+Rate coding is a traditional coding scheme, assuming that most, if not all, information about the stimulus is contained in the firing rate of the neuron.
 
 ### Delta Modulation:
 There are theories that the retina is adaptive: it will only process information when there is something new to process. If there is no change in your field of view, then your photoreceptor cells are less prone to firing.   
