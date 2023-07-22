@@ -27,9 +27,11 @@ In Latency Coding, each feature corresponds to a single spike. The intensity of 
 
 ### Summary:
 
-The idea of rate coding is actually quite controversial. Although we are fairly confident rate coding takes place at our sensory periphery, we are not convinced that the cortex globally encodes information as spike rates.
+The idea of rate coding is actually quite controversial. Although we are fairly confident rate coding takes place at our sensory periphery, we are not convinced that the cortex globally encodes information as spike rates. Reasons:
+1. Power consumption
+2. Reaction response times
 
-
+Rate coding is almost certainly working in conjunction with other encoding schemes in the brain. 
 
 
 
