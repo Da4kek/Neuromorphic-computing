@@ -15,8 +15,8 @@ Activity-dependent plasticity that depends on pre- and postsynaptic activity is 
 
 ### Associations:
 
-Synaptic plasticity is the necessary ingedient behind forming associations.     
-*Increase the strength of the synapses by a value $del w$ = 0.1 if a presynaptic firing is paired with a postsynaptic firing.* 
+Synaptic plasticity is the necessary ingredient behind forming associations.     
+*Increase the strength of the synapses by a value  w = 0.1 if a presynaptic firing is paired with a postsynaptic firing.* 
 
 This learning rule modifies the synaptic weights, so that after one simultaneous presentation of two or more stimuli, the respective cue, will find it.
 
